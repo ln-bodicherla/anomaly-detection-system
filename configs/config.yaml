@@ -1,0 +1,19 @@
+autoencoder:
+  encoder_layers: [128, 64, 32, 16]
+  decoder_layers: [16, 32, 64, 128]
+  dropout: 0.2
+  learning_rate: 0.001
+  epochs: 100
+  batch_size: 256
+  threshold_percentile: 95
+
+isolation_forest:
+  n_estimators: 200
+  max_samples: 0.8
+  contamination: 0.05
+  random_state: 42
+
+ensemble:
+  autoencoder_weight: 0.6
+  isolation_forest_weight: 0.4
+  voting_strategy: "weighted_average"
