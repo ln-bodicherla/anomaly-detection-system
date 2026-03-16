@@ -1,59 +1,76 @@
-# Python
+
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-*.egg-info/
-*.egg
-dist/
-build/
-
-# Virtual environments
-venv/
-env/
+!.env.example
+!.env.sample
+.build/
+.DS_Store
+.eggs/
+.env
+.env.*
+.env.local
 .env/
-.venv/
-
-# IDE
-.vscode/
 .idea/
-*.swp
-*.swo
-*~
-
-# Model artifacts
-models/
-checkpoints/
+.ipynb_checkpoints/
+.swiftpm/
+.venv/
+.vscode/
+*.app
+*.bin
+*.csv
+*.db
+*.db-shm
+*.db-wal
+*.egg
+*.egg-info/
+*.ipa
+*.joblib
+*.key
+*.log
+*.parquet
+*.pem
+*.pkl
 *.pt
 *.pth
-*.bin
-*.joblib
-*.pkl
-
+*.py[cod]
+*.pyc
+*.secret
+*.so
+*.sqlite
+*.sqlite3
+*.swo
+*.swp
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*~
+*$py.class
+# Build
 # Data
-data/
-*.csv
-*.parquet
-
+# Databases
+# Dependencies
+# Environment variables
+# IDE
+# Jupyter
+# Logs
+# Model artifacts
+# OS
+# Python
+# Reports
+# Secrets
 # TensorBoard
+# Virtual environments
+build/
+checkpoints/
+credentials*
+data/
+DerivedData/
+dist/
+env/
+logs/
+models/
+node_modules/
+outputs/
+reports/
 runs/
 tb_logs/
-
-# OS
-.DS_Store
 Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Environment variables
-.env
-.env.local
-
-# Reports
-reports/
-outputs/
+venv/
