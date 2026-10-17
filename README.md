@@ -37,7 +37,7 @@ Error Score     Path Score
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/anomaly-detection-system.git
+git clone https://github.com/ln-bodicherla/anomaly-detection-system.git
 cd anomaly-detection-system
 
 python -m venv venv
@@ -141,15 +141,9 @@ anomaly-detection-system/
 └── README.md
 ```
 
-## Performance
+## Data and Evaluation
 
-Evaluated on synthetic financial transaction dataset (10,000 transactions, 5% anomaly rate):
-
-| Method | Precision | Recall | F1 Score | AUC-ROC |
-|--------|-----------|--------|----------|---------|
-| Autoencoder | 0.85 | 0.82 | 0.83 | 0.94 |
-| Isolation Forest | 0.81 | 0.88 | 0.84 | 0.93 |
-| Ensemble | 0.89 | 0.86 | 0.87 | 0.96 |
+Uses a generated synthetic transaction dataset (`src/data_generator.py`) with injected anomalies for demonstration. No evaluation results are published in this repository; because the anomalies are injected by the generator, scores on this data would not reflect performance on real transactions.
 
 ## License
 
